@@ -1,8 +1,13 @@
 // blesship.cpp
 
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#else
+#include <GL/glut.h>
+#endif
+
 #include <cstdlib>
 #include <iostream>
-#include <GL/glut.h>
 #include "blesship.h"
 #include "defines.h"
 #include "wrapfunc.h"

@@ -6,7 +6,11 @@
 #ifndef __pi_piano_PSITEXTURE_H__
 #define __pi_piano_PSITEXTURE_H__
 
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#else
 #include <GL/glut.h>
+#endif
 
 class PsiTexture {
 public:
