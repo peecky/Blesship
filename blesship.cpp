@@ -380,10 +380,10 @@ void Blesship::Idle()
 		}
 		break;
 	case 1:
-		if(psi_small.OpenPsi("./images/small.psi") == false ) printf("error interface images"), exit(0);
-		if(psi_hp.OpenPsi("./images/hpfuel.psi") == false) printf("error interface images"), exit(0);
-		if(psi_msl.OpenPsi("./images/msl.psi") == false) printf("error interface images"), exit(0);
-		if(psi_radar.OpenPsi("./images/radar.psi") == false) printf("error interface images"), exit(0);
+		if(psi_small.OpenPsi("./images/small.psi") == false ) std::cerr << "error interface images", exit(0);
+		if(psi_hp.OpenPsi("./images/hpfuel.psi") == false) std::cerr << "error interface images", exit(0);
+		if(psi_msl.OpenPsi("./images/msl.psi") == false) std::cerr << "error interface images", exit(0);
+		if(psi_radar.OpenPsi("./images/radar.psi") == false) std::cerr << "error interface images", exit(0);
 		break;
 	case 2:
 		// cockpit interface
@@ -501,9 +501,9 @@ void Blesship::Idle()
 		glEndList();
 		break;
 	case 4:
-		if(psi_xbtm.OpenPsi("./images/x_btm.psi") == false) printf("error x wing images"), exit(0);
-		if(psi_xtop.OpenPsi("./images/x_hd.psi") == false) printf("error x wing images"), exit(0);
-		if(psi_xback.OpenPsi("./images/x_back.psi") == false) printf("error x wing images"), exit(0);
+		if(psi_xbtm.OpenPsi("./images/x_btm.psi") == false) std::cerr << "error x wing images", exit(0);
+		if(psi_xtop.OpenPsi("./images/x_hd.psi") == false) std::cerr << "error x wing images", exit(0);
+		if(psi_xback.OpenPsi("./images/x_back.psi") == false) std::cerr << "error x wing images", exit(0);
 		break;
 	case 5:
 		// x wing
@@ -561,9 +561,9 @@ void Blesship::Idle()
 		glEndList();
 		break;
 	case 6:
-		if(psi_missile.OpenPsi("./images/missile.psi") == false) printf("error missile images"), exit(0);
-		if(psi_missile_back.OpenPsi("./images/missi_b.psi") == false) printf("error misssile images"), exit(0);
-		if(psi_boom.OpenPsi("./images/boom.psi") == false) printf("error boom image"), exit(0);
+		if(psi_missile.OpenPsi("./images/missile.psi") == false) std::cerr << "error missile images", exit(0);
+		if(psi_missile_back.OpenPsi("./images/missi_b.psi") == false) std::cerr << "error misssile images", exit(0);
+		if(psi_boom.OpenPsi("./images/boom.psi") == false) std::cerr << "error boom image", exit(0);
 		break;
 	case 7:
 		list_missile = glGenLists(1);
