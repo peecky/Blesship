@@ -250,6 +250,8 @@ void Blesship::Display()
 			glMatrixMode(GL_MODELVIEW);
 		}
 		break;
+	default:
+		break;
 	}
 	
 	glutSwapBuffers();
@@ -703,6 +705,8 @@ void Blesship::TIdle(int value)
 		Display();
 		break;
 	case GAMEOVER:
+		break;
+	default:
 		break;
 	}
 }
