@@ -7,6 +7,7 @@
 #endif
 
 #include <cstdlib>
+#include <cctype>
 #include <iostream>
 #include "blesship.h"
 #include "defines.h"
@@ -382,10 +383,10 @@ void Blesship::Idle()
 		}
 		break;
 	case 1:
-		if(psi_small.OpenPsi("./images/small.psi") == false ) std::cerr << "error interface images", exit(0);
-		if(psi_hp.OpenPsi("./images/hpfuel.psi") == false) std::cerr << "error interface images", exit(0);
-		if(psi_msl.OpenPsi("./images/msl.psi") == false) std::cerr << "error interface images", exit(0);
-		if(psi_radar.OpenPsi("./images/radar.psi") == false) std::cerr << "error interface images", exit(0);
+		if(psi_small.OpenPsi("./images/small.psi") == false ) std::cerr << "error interface images" << std::endl, exit(0);
+		if(psi_hp.OpenPsi("./images/hpfuel.psi") == false) std::cerr << "error interface images" << std::endl, exit(0);
+		if(psi_msl.OpenPsi("./images/msl.psi") == false) std::cerr << "error interface images" << std::endl, exit(0);
+		if(psi_radar.OpenPsi("./images/radar.psi") == false) std::cerr << "error interface images" << std::endl, exit(0);
 		break;
 	case 2:
 		// cockpit interface
@@ -503,9 +504,9 @@ void Blesship::Idle()
 		glEndList();
 		break;
 	case 4:
-		if(psi_xbtm.OpenPsi("./images/x_btm.psi") == false) std::cerr << "error x wing images", exit(0);
-		if(psi_xtop.OpenPsi("./images/x_hd.psi") == false) std::cerr << "error x wing images", exit(0);
-		if(psi_xback.OpenPsi("./images/x_back.psi") == false) std::cerr << "error x wing images", exit(0);
+		if(psi_xbtm.OpenPsi("./images/x_btm.psi") == false) std::cerr << "error x wing images" << std::endl, exit(0);
+		if(psi_xtop.OpenPsi("./images/x_hd.psi") == false) std::cerr << "error x wing images" << std::endl, exit(0);
+		if(psi_xback.OpenPsi("./images/x_back.psi") == false) std::cerr << "error x wing images" << std::endl, exit(0);
 		break;
 	case 5:
 		// x wing
@@ -563,9 +564,9 @@ void Blesship::Idle()
 		glEndList();
 		break;
 	case 6:
-		if(psi_missile.OpenPsi("./images/missile.psi") == false) std::cerr << "error missile images", exit(0);
-		if(psi_missile_back.OpenPsi("./images/missi_b.psi") == false) std::cerr << "error misssile images", exit(0);
-		if(psi_boom.OpenPsi("./images/boom.psi") == false) std::cerr << "error boom image", exit(0);
+		if(psi_missile.OpenPsi("./images/missile.psi") == false) std::cerr << "error missile images" << std::endl, exit(0);
+		if(psi_missile_back.OpenPsi("./images/missi_b.psi") == false) std::cerr << "error misssile images" << std::endl, exit(0);
+		if(psi_boom.OpenPsi("./images/boom.psi") == false) std::cerr << "error boom image" << std::endl, exit(0);
 		break;
 	case 7:
 		list_missile = glGenLists(1);
@@ -713,29 +714,24 @@ void Blesship::TIdle(int value)
 
 void Blesship::KeyInput(unsigned char key, int x, int y)
 {
+	key = tolower(key);
 	switch(key) {
 	case 'w':
-	case 'W':
 		iswpress = true;
 		break;
 	case 'q':
-	case 'Q':
 		isqpress = true;
 		break;
 	case 'a':
-	case 'A':
 		isapress = true;
 		break;
 	case 's':
-	case 'S':
 		isspress = true;
 		break;
 	case 'd':
-	case 'D':
 		isdpress = true;
 		break;
 	case 'e':
-	case 'E':
 		isepress = true;
 		break;
 	case ' ':
@@ -748,29 +744,24 @@ void Blesship::KeyInput(unsigned char key, int x, int y)
 
 void Blesship::KeyUp(unsigned char key, int x, int y)
 {
+	key = tolower(key);
 	switch(key) {
 	case 'q':
-	case 'Q':
 		isqpress = false;
 		break;
 	case 'w':
-	case 'W':
 		iswpress = false;
 		break;
 	case 'a':
-	case 'A':
 		isapress = false;
 		break;
 	case 's':
-	case 'S':
 		isspress = false;
 		break;
 	case 'd':
-	case 'D':
 		isdpress = false;
 		break;
 	case 'e':
-	case 'E':
 		isepress = false;
 		break;
 	}
