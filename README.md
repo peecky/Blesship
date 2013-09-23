@@ -8,7 +8,7 @@ A 3D FPS and Space flight game. This is a prototype version. In the space, there
 ![image](http://i1138.photobucket.com/albums/n532/pidiom/blesshipshotmissile.png)
 ![image](http://i1138.photobucket.com/albums/n532/pidiom/blesshipmissileexplosion.png)
 
-[Demo Movie](http://youtu.be/z_bWRhmf92U)
+[![image](http://i1138.photobucket.com/albums/n532/pidiom/blesshipdemomovie.jpg)](http://youtu.be/z_bWRhmf92U)
 
 ## Control ##
 *	W, Q and Arrow Keys: Rotate the player
