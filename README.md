@@ -3,12 +3,12 @@ Blesship
 A 3D FPS and Space flight game. This is a prototype version. In the space, there are only an enemy space ship and an item (Increase the Fuel) and you!
 
 ## Screenshots and Demo Movie ##
-![image](http://i1138.photobucket.com/albums/n532/pidiom/blesshipinitialscreen.png)
-![image](http://i1138.photobucket.com/albums/n532/pidiom/blesshipshootbullets.png)
-![image](http://i1138.photobucket.com/albums/n532/pidiom/blesshipshotmissile.png)
-![image](http://i1138.photobucket.com/albums/n532/pidiom/blesshipmissileexplosion.png)
+![screenshot](https://peecky.github.io/Blesship/screenshots/blesshipinitialscreen.png)
+![shooting bullets](https://peecky.github.io/Blesship/screenshots/blesshipshootbullets.png)
+![shooting missile](https://peecky.github.io/Blesship/screenshots/blesshipshotmissile.png)
+![explosion](https://peecky.github.io/Blesship/screenshots/blesshipmissileexplosion.png)
 
-[![image](http://i1138.photobucket.com/albums/n532/pidiom/blesshipdemomovie.jpg)](http://youtu.be/z_bWRhmf92U)
+[![play demo](https://peecky.github.io/Blesship/misc/blesshipdemomovie.JPG)](http://youtu.be/z_bWRhmf92U)
 
 ## Control ##
 *	W, Q and Arrow Keys: Rotate the player
